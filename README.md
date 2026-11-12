@@ -1,66 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+# Sistem Informasi Peminjaman Alat
+
+**Uji Kompetensi Keahlian (UKK) — Rekayasa Perangkat Lunak (RPL)**  
+Paket 1: Aplikasi Manajemen Inventaris & Peminjaman Alat Berbasis Web
+
+<p>
+  <img src="https://img.shields.io/badge/Laravel-12.72-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/Filament-v4-FDAE4B?style=for-the-badge&logo=php&logoColor=black" alt="Filament" />
+  <img src="https://img.shields.io/badge/PHP-8.3-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Livewire-Reactive_UI-FB70A9?style=for-the-badge&logo=livewire&logoColor=white" alt="Livewire" />
 </p>
 
-## About Laravel
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Profil Pengembang
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+| Informasi | Detail |
+| :--- | :--- |
+| **Nama** | MUH. FEBRYANT HIDAYATULLAH |
+| **Kelas** | XII RPL 3 |
+| **Kompetensi Keahlian** | Rekayasa Perangkat Lunak (RPL) |
+| **Judul Proyek** | Aplikasi Sistem Informasi Peminjaman Alat |
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tentang Aplikasi
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Aplikasi **Sistem Informasi Peminjaman Alat** merupakan proyek **Uji Kompetensi Keahlian (UKK) RPL** yang dibangun menggunakan framework **Laravel 12** dan **Filament Admin Panel**. Sistem ini dirancang untuk mendigitalisasi pengelolaan inventaris alat, pencatatan pengajuan peminjaman, verifikasi persetujuan oleh petugas, pemantauan pengembalian beserta denda keterlambatan, hingga pencetakan laporan transaksi secara terstruktur.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## Pembagian Hak Akses (Role)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+| Role | Hak Akses & Wewenang |
+| :--- | :--- |
+| **Admin** | Akses penuh (CRUD) terhadap data **Users**, **Categories**, **Tools**, **Loans**, dan **Activity Logs**, memantau dashboard, serta mencetak laporan. |
+| **Petugas** | Melihat daftar inventaris **Tools** (read-only), memproses persetujuan atau penolakan pengajuan peminjaman (**Setujui / Tolak**), memproses pengembalian alat, serta mencetak laporan. |
+| **Peminjam** | Melihat daftar alat yang tersedia, mengajukan peminjaman baru, dan memantau status transaksi peminjaman. |
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Alur Kerja Sistem
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```mermaid
+flowchart LR
+    A[Peminjam Mengajukan Pinjaman] --> B{Verifikasi Petugas}
+    B -->|Setujui| C[Status: Dipinjam & Stok Berkurang]
+    B -->|Tolak| D[Status: Ditolak & Stok Tetap]
+    C --> E[Log Aktivitas Tercatat]
+    D --> E
+    C --> F[Pengembalian Alat]
+    F --> G[Stok Kembali & Hitung Denda]
+    G --> H[Cetak Laporan Peminjaman]
